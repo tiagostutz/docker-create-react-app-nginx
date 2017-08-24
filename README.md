@@ -1,4 +1,4 @@
-# Docker image for deploying create react app App gracefully
+# Docker image for deploying create-react-app Apps easily
 
 A Docker image that builds a create-react-app app from source and deploys it to an NGinx server
 
