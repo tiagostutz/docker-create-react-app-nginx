@@ -9,8 +9,8 @@ ENV NODE_VERSION 8.4.0
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz"
 
 RUN tar -zxvf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
-&& rm "node-v$NODE_VERSION-linux-x64.tar.gz" \
-&& ln -s /usr/local/bin/node /usr/local/bin/nodejs
+    && rm "node-v$NODE_VERSION-linux-x64.tar.gz" \
+    && ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
 RUN npm install -g create-react-app
 
